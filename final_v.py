@@ -1,3 +1,5 @@
+#AUTHOR : KG
+#ETW : 45 min
 from sqlalchemy import *
 import unicodedata
 import urllib
