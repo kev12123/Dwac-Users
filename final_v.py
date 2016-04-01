@@ -9,7 +9,7 @@ from openpyxl.styles import Font, Color,Fill,PatternFill,Border
 import string
 from Excel import *
 
-def load_connection( driver ='SQL Server Native Client 10.0',server='astsqlent02dev',database = 'TeamWorkShop'):
+def load_connection( driver ='SQL Server Native Client 10.0',server='**********',database = '**********'):
         #Function to load sessiona and MetaData
         quoted = urllib.quote_plus('DRIVER={0};Server={1};Database={2};Trusted_Connection=yes;'.format(driver,server,database))
         connection =create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
