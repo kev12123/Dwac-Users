@@ -46,8 +46,6 @@ for i in ceridian_data:
 
 #EMPLOYEES WITHOUT USERID IN THE CERIDIAN TABLE
 #THE NAMING COVENTION FOR THE USERID IS INITIAL OF FIRST NAME AND LAST NAME
-#USING THIS PATTERN I WILL FIND CREATE THE USER ID FROM THE CERIDDIAN LIST COLUMN
-#AND FIND THE REMAINING MATCHES
 for i in ceridian_data:
     if i[13] is None:
         last_name,first_name =i[5].split(',')
@@ -82,7 +80,6 @@ for column in range(num_of_columns):
 
 
 #FORMATTING SPREADSHEET STYLE
-
 for column_width in columns_widths:
     for i in range(num_of_columns):
         ws.column_dimensions[sheet_columns[i]].width = 33
